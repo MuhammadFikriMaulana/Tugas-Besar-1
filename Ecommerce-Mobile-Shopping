@@ -1,0 +1,234 @@
+https://dribbble.com/shots/25014612-Ecommerce-Mobile-Shopping
+
+![Image](https://github.com/user-attachments/assets/749c0a6a-d924-4456-81ec-410ebec3afa8)
+dari design file ini petakan struktur sesuai contoh ini :
+
+
+core:
+    - global_component:
+	- apa
+    - config :
+      - main_app.dart
+    - utils :
+      - route_utils.dart
+    - constants :
+      - string
+      - color
+      - images
+
+
+  data:
+      data1:
+      - model:
+        - model1
+      - dummy:
+        - dummy1
+     dan seterusnya
+      
+
+
+
+  features:
+    fitur1:
+      - screen:
+        - Screen.dart
+      - widgets:
+	- widget1
+      - controller:
+        - controller1
+      dan seteru
+
+core:
+    - global_component:
+        - AppBarComponent
+        - LoadingSpinner
+    - config:
+        - main_app.dart
+    - utils:
+        - route_utils.dart
+    - constants:
+        - string_constants.dart
+        - color_constants.dart
+        - image_constants.dart
+
+data:
+    product:
+        - model:
+            - ProductModel.dart
+        - repository:
+            - ProductRepository.dart
+        - dummy:
+            - dummy_products.dart
+
+features:
+    product_details:
+        - screen:
+            - ProductDetailsScreen.dart
+        - widgets:
+            - ProductImageCarousel.dart
+            - ProductDescription.dart
+            - AddToCartButton.dart
+        - controller:
+            - ProductDetailsController.dart
+dari design file ini petakan struktur sesuai contoh ini :
+
+
+![Image](https://github.com/user-attachments/assets/a729c9ad-6892-4dd7-bf3a-3522fc5438c2)
+
+core:
+    - global_component:
+	- apa
+    - config :
+      - main_app.dart
+    - utils :
+      - route_utils.dart
+    - constants :
+      - string
+      - color
+      - images
+
+
+  data:
+      data1:
+      - model:
+        - model1
+      - dummy:
+        - dummy1
+     dan seterusnya
+      
+
+
+
+  features:
+    fitur1:
+      - screen:
+        - Screen.dart
+      - widgets:
+	- widget1
+      - controller:
+        - controller1
+      dan seteru
+
+Core
+
+    Global Component
+        ButtonWidget: The "Add to Cart" button and others can be a reusable component.
+        ColorSelector: The color selection UI component.
+        SizeSelector: The size picker (e.g., XS, S, M, etc.).
+        ProductListTile: For the "You May Also Like" section.
+    Config
+        main_app.dart: Entry point of the app, responsible for navigation and initialization.
+    Utils
+        route_utils.dart: Handles app navigation (e.g., opening product details or the store locator).
+    Constants
+        Strings: Product titles, button texts, and section headers like "You May Also Like."
+        Colors: Theme colors (black for buttons, white background, etc.).
+        Images: Paths for images like product previews.
+
+Data
+
+    Model
+        ProductModel: Represents a product with attributes like name, price, color options, size, etc.
+    Dummy
+        DummyProductData: Contains placeholder data for products in the "You May Also Like" section.
+
+Features
+
+    ProductDetail
+        Screen
+            ProductDetailScreen.dart: Main screen for the product detail view.
+        Widgets
+            AddToCartButton.dart: Manages the "Add to Cart" functionality.
+            ColorPicker.dart: UI for selecting colors.
+            SizeSelector.dart: UI for selecting sizes.
+            YouMayAlsoLikeGrid.dart: Displays related products.
+        Controller
+            ProductDetailController.dart: Handles business logic for the product detail page, like updating the cart or fetching related products.
+
+    StoreLocator
+        Screen
+            StoreLocatorScreen.dart: Screen for finding stores.
+        Widgets
+            MapView.dart: Displays the map for store locations.
+            StoreListItem.dart: A reusable widget for displaying individual store details.
+
+    Cart
+        Screen
+            CartScreen.dart: Displays products added to the cart.
+        Widgets
+            CartItemTile.dart: Displays each product in the cart.
+
+![Image](https://github.com/user-attachments/assets/771d211b-6229-4cc4-9663-da374ceb74c3)
+
+dari design file ini petakan struktur sesuai contoh ini :
+
+
+core:
+    - global_component:
+	- apa
+    - config :
+      - main_app.dart
+    - utils :
+      - route_utils.dart
+    - constants :
+      - string
+      - color
+      - images
+
+
+  data:
+      data1:
+      - model:
+        - model1
+      - dummy:
+        - dummy1
+     dan seterusnya
+      
+
+
+
+  features:
+    fitur1:
+      - screen:
+        - Screen.dart
+      - widgets:
+	- widget1
+      - controller:
+        - controller1
+      dan seteru
+
+Core
+
+    Global Component:
+        CardWidget: Represents individual product cards (e.g., images, titles, prices, favorite icon).
+        GridViewBuilder: Used to arrange items in a grid format.
+        PrimaryButton: For the "Start Shopping" button at the bottom.
+
+    Config:
+        main_app.dart: The app's main entry point.
+
+    Utils:
+        route_utils.dart: Handles navigation to the product details or shopping pages.
+
+    Constants:
+        Strings: Section titles like "You May Also Like," product names, and button texts.
+        Colors: Primary and accent colors used for backgrounds, buttons, and text.
+        Images: Paths or URLs for the product images shown in the grid.
+
+Data
+
+    Model:
+        ProductModel: Includes attributes such as product name, brand, price, image URL, and favorite status.
+    Dummy:
+        DummyProductData: Contains placeholder data for the "You May Also Like" section.
+
+Features
+
+    ProductRecommendation:
+        Screen:
+            RecommendationScreen.dart: Displays the "You May Also Like" section with the grid and the "Start Shopping" button.
+        Widgets:
+            ProductCard.dart: Represents individual product items with images, titles, prices, and the favorite button.
+            StartShoppingButton.dart: Handles the bottom button functionality.
+        Controller:
+            RecommendationController.dart: Manages the state and logic for fetching and displaying recommended products.
